@@ -13,3 +13,15 @@ function revert(id){
     
     document.getElementById(tooltipText).innerText = "Copy";
 }
+
+function scrollToSection(event) {
+    event.preventDefault();
+  
+    const section = document.querySelector(event.target.getAttribute('href'));
+    const sectionTop = section.offsetTop - parseInt(getComputedStyle(section).paddingTop);
+  
+    window.scrollTo({
+      top: sectionTop,
+      behavior: 'smooth'
+    });
+}

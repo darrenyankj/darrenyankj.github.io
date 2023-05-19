@@ -1,57 +1,53 @@
+:root{
+    font-family: 'Montserrat', sans-serif;
+    --dark-color: #769FCD;
+    --light-color: #B9D7EA;
+    --text-color: #000;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
-header{
-    position: sticky;
-    top: 0;
-    padding: 10px;
-    background-color: #B9D7EA;
-    display: flex;
-    justify-content: space-between;
-    z-index: 99;
+
+body::-webkit-scrollbar{
+    width: 0.5rem;
 }
 
-header h1 a{
-    font-weight: 800;
-    text-decoration: none;
-    color: #000;
+body::-webkit-scrollbar-track{
+    background: var(--light-color);
+}
 
+body::-webkit-scrollbar-thumb{
+    background: var(--dark-color);
+    border-radius: 0.75rem;
 }
-.navi a{
-    position: inherit;
-    text-decoration: none;
-    font-weight: 600;
-    color: #000;
-    display: inline-block;
-    place-items: center;
-    padding: 6px 15px;
-    margin: 0 10px;
-    border-radius: 20px;
-}
-.navi a:hover, .navi a.active{
-    background: #F7FBFC;
-    color: #000;
-}
+
 #background{
-    background-color: #B9D7EA;
+    background-color: var(--light-color);
     display: grid;
     place-items: center;
     align-content: center;
     min-height: 100vh;
 }
+
 .intro-image img{
     width: 160px;
     height: 160px;
-    border: 3px solid #769FCD;
+    border: 3px solid var(--dark-color);
     border-radius: 50%;
 }
 .intro{
-    color: #000;
+    color: var(--text-color);
     text-align: center;
 }
 .intro h1{
@@ -65,13 +61,14 @@ header h1 a{
 }
 
 #skills{
-    background-color: #B9D7EA;
+    background-color: var(--light-color);
     text-align: left;
     padding-left: 40px;
+    padding-top: 20px;
     min-height: 100vh;
 }
 
-ion-icon{
+#skills ion-icon{
     font-size: 60px;
 }
 
@@ -104,18 +101,18 @@ ion-icon{
 
 .tooltip:hover{
     transform: translateY(-5px);
-    transition: .2s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 .tooltip:hover ion-icon, .tooltip:hover img, .copyButton:hover ion-icon, .contact-links a ion-icon:hover{
     filter: invert(77%) sepia(9%) saturate(7407%) hue-rotate(183deg) brightness(90%) contrast(76%);
 }
 
-.tooltip .tooltiptext, .copyButton .tooltiptext{
+.tooltip .tooltiptext{
     visibility: hidden;
     opacity: 100%;
     background-color: #000;
-    color: #B9D7EA;
+    color: var(--light-color);
     text-align: center;
     padding: 5px 10px;
     border-radius: 6px;
@@ -124,15 +121,14 @@ ion-icon{
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    z-index: 98;
 }
 
-.tooltip:hover .tooltiptext, .copyButton:hover .tooltiptext{
+.tooltip:hover .tooltiptext{
     visibility: visible;
     transition: .2s ease-in-out;
 }
 
-.tooltip .tooltiptext::after, .copyButton .tooltiptext::after{
+.tooltip .tooltiptext::after{
     content: " ";
     position: absolute;
     bottom: 100%; 
@@ -144,10 +140,11 @@ ion-icon{
 }
 
 #contacts{
-    background-color: #B9D7EA;
+    background-color: var(--light-color);
     text-align: left;
     padding-left: 40px;
     min-height: 100vh;
+    padding-top: 20px;
 }
 
 .links h1{
@@ -174,7 +171,7 @@ ion-icon{
     display: inline-block;
     align-items: center;
     vertical-align: middle;
-    margin: 15px 0;
+    margin: 20px 10px;
 }
 
 .logo-label{
@@ -194,34 +191,32 @@ ion-icon{
 }
 
 .copyButton{
-    border: 3px solid #000;
     background: none;
-    border-radius: 10%;
     padding: 10px;
-    margin: 15px 10px;
+    border: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    float: center;
+    transition: transform .2s ease-in-out;
+    text-align: center;
+}
+
+.contact-links a ion-icon{
+    padding: 10px;
     display: inline-block;
     position: relative;
     cursor: pointer;
     float: left;
     transition: transform .2s ease-in-out;
+    box-sizing: border-box;
 }
 
-.copyButton:hover{
-    border: 3px solid #769FCD;
-}
-
-.copyButton:hover, .contact-links a ion-icon:hover{
-    transform: translateY(-5px);
-}
-
-.contact-links a ion-icon{
-    border: 3px solid #000;
+.contact-links .tooltip{
+    border: 3px solid var(--text-color);
     border-radius: 10%;
-    padding: 10px;
-    margin: 15px 10px;
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    float: left;
-    transition: .2s ease-in-out;
+}
+
+.contact-links .tooltip:hover{
+    border: 3px solid var(--dark-color);
 }

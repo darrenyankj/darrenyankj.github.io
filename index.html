@@ -5,28 +5,50 @@
     <title>
         Personal Webpage
     </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<header>
-    <h1><a href="#">darrenyankj.</a></h1>
-    <nav class="navi">
-        <a href="#" class="active">Home</a>
-        <a href="#">Skills</a>
-        <!--<a href="#">Experiences</a>-->
-        <a href="#">Contacts</a>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-header">
+                <ion-icon name="caret-forward-outline" class="arrow"></ion-icon>
+                <span class="header-name">darrenyankj</span>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <ion-icon name="home"></ion-icon>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#skills" class="nav-link" onclick="scrollToSection(event)">
+                    <ion-icon name="terminal"></ion-icon>
+                    <span class="link-text">Skills</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#contacts" class="nav-link" onclick="scrollToSection(event)">
+                    <ion-icon name="call"></ion-icon>
+                    <span class="link-text">Contacts</span>
+                </a>
+            </li>
+        </ul>
     </nav>
-</header>
+
+<main>
 <section id="background">
     <div class="intro-image">
         <img src="images/intro-pic.jpg" alt="intro-pic">
     </div>
     <div class="intro">
-        <h1>Darren Yan</h1>
+        <h1>darren yan</h1>
         <p>Hi there! I'm <b>Darren</b>, a penultimate year undergraduate from National University of Singapore studying <b>Data Science and Economics.</b></p>
     </div>
 </section>
@@ -58,23 +80,26 @@
                 <ion-icon name="logo-github"></ion-icon><span class="logo-label" id="github-label">github.com/darrenyankj</span>
                 <br><ion-icon name="logo-linkedin"></ion-icon><span class="logo-label" id="linkedin-label">linkedin.com/in/darren-yan-kj</span>
                 <br><ion-icon name="mail"></ion-icon><span class="logo-label" id="email-label">darrenyankj@gmail.com</span>
+                <br><ion-icon name="paper-plane"></ion-icon><span class="logo-label" id="telegram-label">@darrenyankayjay</span>
             </div>
             <div class="contact-links">
-                <button class="copyButton" onclick="copyFunc('github-label');" onmouseleave="revert('github-label');"><ion-icon name="clipboard-outline"></ion-icon><span class="tooltiptext" id="github-label-tooltip">Copy</span></button>
-                <a href="https://github.com/darrenyankj" target="_blank" rel="noopener noreferrer"><ion-icon name="link-outline"></ion-icon></a>
-                <br><button class="copyButton" onclick="copyFunc('linkedin-label');" onmouseleave="revert('linkedin-label');"><ion-icon name="clipboard-outline"></ion-icon><span class="tooltiptext" id="linkedin-label-tooltip">Copy</span></button>
-                <a href="https://linkedin.com/in/darren-yan-kj" target="_blank" rel="noopener noreferrer"><ion-icon name="link-outline"></ion-icon></a>
-                <br><button class="copyButton" onclick="copyFunc('email-label');" onmouseleave="revert('email-label');"><ion-icon name="clipboard-outline"></ion-icon><span class="tooltiptext" id="email-label-tooltip">Copy</span></button>
-                <a href="mailto:darrenyankj@gmail.com"><ion-icon name="link-outline"></ion-icon></a>
+                <div class="tooltip"><button class="copyButton" onclick="copyFunc('github-label');" onmouseleave="revert('github-label');"><ion-icon name="clipboard-outline"></ion-icon></button><span class="tooltiptext" id="github-label-tooltip">Copy</span></div>
+                <div class="tooltip"><a href="https://github.com/darrenyankj" target="_blank" rel="noopener noreferrer"><ion-icon name="link-outline"></ion-icon></a><span class="tooltiptext">Link</span></div>
+                <br><div class="tooltip"><button class="copyButton" onclick="copyFunc('linkedin-label');" onmouseleave="revert('linkedin-label');"><ion-icon name="clipboard-outline"></ion-icon></button><span class="tooltiptext" id="linkedin-label-tooltip">Copy</span></div>
+                <div class="tooltip"><a href="https://linkedin.com/in/darren-yan-kj" target="_blank" rel="noopener noreferrer"><ion-icon name="link-outline"></ion-icon></a><span class="tooltiptext">Link</span></div>
+                <br><div class="tooltip"><button class="copyButton" onclick="copyFunc('email-label');" onmouseleave="revert('email-label');"><ion-icon name="clipboard-outline"></ion-icon></button><span class="tooltiptext" id="email-label-tooltip">Copy</span></div>
+                <div class="tooltip"><a href="mailto:darrenyankj@gmail.com"><ion-icon name="link-outline"></ion-icon></a><span class="tooltiptext">Link</span></div>
+                <br><div class="tooltip"><button class="copyButton" onclick="copyFunc('telegram-label');" onmouseleave="revert('telegram-label');"><ion-icon name="clipboard-outline"></ion-icon></button><span class="tooltiptext" id="telegram-label-tooltip">Copy</span></div>
+                <div class="tooltip"><a href="https://t.me/darrenyankayjay" target="_blank" rel="noopener noreferrer"><ion-icon name="link-outline"></ion-icon></a><span class="tooltiptext">Link</span></div>
             </div>
         </div>
     </div>
 </section>
-
+</main>
 <!-- javascript -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script type="text/javascript" src="webscript.js"></script>
+<script type="text/javascript" src="src/js/baseScript.js"></script>
 
 </body>
 

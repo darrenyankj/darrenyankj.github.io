@@ -1,0 +1,95 @@
+main{
+    margin-left: 5rem;
+}
+
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--dark-color);
+    transition: width .2s ease;
+    z-index: 99;
+} 
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item{
+    width: 100%;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #fff;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: .2s ease;
+}
+
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: var(--light-color);
+    color: #000;
+    font-weight: bold;
+}
+
+.nav-link:hover ion-icon{
+    color: #000;
+}
+
+.nav-link ion-icon{
+    font-size: 30px;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+    color: #fff;
+    transition: .2s ease;
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+}
+
+.navbar:hover{
+    width: 16rem;
+}
+
+.navbar:hover .link-text, .navbar:hover .header-name{
+    display: inline-block;
+}
+
+.nav-header{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
+.nav-header .header-name{
+    display: none;
+}
+
+.nav-header .arrow{
+    filter: grayscale(100%) opacity(0.7);
+    transition: .8s ease;
+    transform: rotate(0deg);
+}
+
+.navbar:hover .arrow{
+    transform: rotate(-180deg);
+    filter: grayscale(0%) opacity(1);
+}
