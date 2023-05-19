@@ -12,30 +12,69 @@
 </head>
 
 <body>
+<header>
+    <h1><a href="#">darrenyankj.</a></h1>
+    <nav class="navi">
+        <a href="#" class="active">Home</a>
+        <a href="#">Skills</a>
+        <!--<a href="#">Experiences</a>-->
+        <a href="#">Contacts</a>
+    </nav>
+</header>
 <section id="background">
     <div class="intro-image">
         <img src="images/intro-pic.jpg" alt="intro-pic">
     </div>
     <div class="intro">
-        <h1>Darren Yan.</h1>
-        <p>Introduction</p>
+        <h1>Darren Yan</h1>
+        <p>Hi there! I'm <b>Darren</b>, a penultimate year undergraduate from National University of Singapore studying <b>Data Science and Economics.</b></p>
+    </div>
+</section>
+
+<section id="skills">
+    <h1>Skills</h1>
+    <div class="skill-languages">
+        <h2>Languages</h2>
+        <div class="tooltip"><ion-icon name="logo-python"></ion-icon><span class="tooltiptext">Python</span></div>
+        <div class="tooltip"><img src="images/icon-r.png"><span class="tooltiptext">R</span></div>
+        <div class="tooltip"><img src="images/icon-java.png"><span class="tooltiptext">Java</span></div>
+        <div class="tooltip"><ion-icon name="logo-html5"></ion-icon><span class="tooltiptext">HTML</span></div>
+        <div class="tooltip"><ion-icon name="logo-css3"></ion-icon><span class="tooltiptext">CSS</span></div>
+        <div class="tooltip"><ion-icon name="logo-javascript"></ion-icon><span class="tooltiptext">Javascript</span></div>
+    </div>
+    <div class="skill-others">
+        <h2>Others</h2>
+        <div class="tooltip"><ion-icon name="logo-tableau"></ion-icon><span class="tooltiptext">Tableau</span></div>
+        <div class="tooltip"><img src="images/icon-powerbi.png"><span class="tooltiptext">Power BI</span></div>
+        <div class="tooltip"><ion-icon name="logo-google"></ion-icon><span class="tooltiptext">Google Suite</span></div>
     </div>
 </section>
 
 <section id="contacts">
     <div class="links">
-        <h1>Contacts.</h1>
+        <h1>Contacts</h1>
         <div class="logos">
-            <a href="https://github.com/darrenyankj"><ion-icon name="logo-github"></ion-icon></a>
-            <br><a href="https://linkedin.com/in/darren-yan-kj"><ion-icon name="logo-linkedin"></ion-icon></a>
-            <br><a href="mailto:darrenyankj@gmail.com"><ion-icon name="mail"></ion-icon></a>
+            <div class="contact-information">
+                <ion-icon name="logo-github"></ion-icon><span class="logo-label" id="github-label">github.com/darrenyankj</span>
+                <br><ion-icon name="logo-linkedin"></ion-icon><span class="logo-label" id="linkedin-label">linkedin.com/in/darren-yan-kj</span>
+                <br><ion-icon name="mail"></ion-icon><span class="logo-label" id="email-label">darrenyankj@gmail.com</span>
+            </div>
+            <div class="contact-links">
+                <button class="copyButton" onclick="copyFunc('github-label');" onmouseleave="revert('github-label');"><ion-icon name="clipboard-outline"></ion-icon><span class="tooltiptext" id="github-label-tooltip">Copy</span></button>
+                <a href="https://github.com/darrenyankj" target="_blank" rel="noopener noreferrer"><ion-icon name="link-outline"></ion-icon></a>
+                <br><button class="copyButton" onclick="copyFunc('linkedin-label');" onmouseleave="revert('linkedin-label');"><ion-icon name="clipboard-outline"></ion-icon><span class="tooltiptext" id="linkedin-label-tooltip">Copy</span></button>
+                <a href="https://linkedin.com/in/darren-yan-kj" target="_blank" rel="noopener noreferrer"><ion-icon name="link-outline"></ion-icon></a>
+                <br><button class="copyButton" onclick="copyFunc('email-label');" onmouseleave="revert('email-label');"><ion-icon name="clipboard-outline"></ion-icon><span class="tooltiptext" id="email-label-tooltip">Copy</span></button>
+                <a href="mailto:darrenyankj@gmail.com"><ion-icon name="link-outline"></ion-icon></a>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- ionicon script -->
+<!-- javascript -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript" src="webscript.js"></script>
 
 </body>
 
