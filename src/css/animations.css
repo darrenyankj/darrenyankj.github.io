@@ -1,0 +1,36 @@
+.animation-hidden-left-js{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all .8s;
+}
+
+.animation-hidden-right-js{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all .8s;    
+}
+
+.animation-hidden-appear-js{
+    opacity: 0;
+    transition-delay: calc(1s * var(--order));
+    transition: all .8s;
+}
+
+.animation-show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .animation-hidden {
+        transition: all 1s;
+    }
+}
+
+.tooltip{
+    transition-delay: calc(150ms * var(--order));
+}
+

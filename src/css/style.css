@@ -68,8 +68,9 @@ body::-webkit-scrollbar-thumb{
     min-height: 100vh;
 }
 
-#skills ion-icon{
+#skills ion-icon, #skills i{
     font-size: 60px;
+    color: #000;
 }
 
 #skills h1{
@@ -104,7 +105,8 @@ body::-webkit-scrollbar-thumb{
     transition: transform .2s ease-in-out;
 }
 
-.tooltip:hover ion-icon, .tooltip:hover img, .copyButton:hover ion-icon, .contact-links a ion-icon:hover{
+.tooltip:hover ion-icon, .tooltip:hover i, .tooltip:hover img, 
+.copyButton:hover ion-icon, .contact-links a ion-icon:hover{
     filter: invert(77%) sepia(9%) saturate(7407%) hue-rotate(183deg) brightness(90%) contrast(76%);
 }
 
@@ -157,11 +159,11 @@ body::-webkit-scrollbar-thumb{
 }
 
 .contact-information{
-    flex: 50%;
+    flex: 70%;
 }
 
 .contact-links{
-    flex: 50%;
+    flex: 30%;
 }
 
 .contact-information ion-icon{
