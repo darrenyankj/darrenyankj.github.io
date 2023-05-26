@@ -94,3 +94,14 @@ main{
     transform: rotate(-180deg);
     filter: grayscale(0%) opacity(1);
 }
+
+.active{
+    filter: grayscale(0%) opacity(1);
+    background: var(--light-color);
+    color: #000;
+    font-weight: bold;
+}
+
+.active ion-icon{
+    color: #000;
+}
