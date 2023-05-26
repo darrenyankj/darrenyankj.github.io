@@ -1,8 +1,10 @@
 :root{
     font-family: 'Montserrat', sans-serif;
-    --dark-color: #769FCD;
-    --light-color: #B9D7EA;
-    --text-color: #000;
+    --dark-color: #112D4E;
+    --light-color: #F9F7F7;
+    --text-color: #112D4E;
+    --blank-text-color: #DBE2EF;
+    --tooltip-color: #3F72AF;
 }
 
 html{
@@ -17,6 +19,7 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    color: var(--text-color);
 }
 
 body::-webkit-scrollbar{
@@ -70,7 +73,7 @@ body::-webkit-scrollbar-thumb{
 
 #skills ion-icon, #skills i{
     font-size: 60px;
-    color: #000;
+    color: var(--text-color);
 }
 
 #skills h1{
@@ -98,6 +101,7 @@ body::-webkit-scrollbar-thumb{
     width: 100%;
     height: auto;
     float: left;
+    filter: invert(14%) sepia(11%) saturate(5104%) hue-rotate(180deg) brightness(97%) contrast(95%);
 }
 
 .tooltip:hover{
@@ -107,13 +111,13 @@ body::-webkit-scrollbar-thumb{
 
 .tooltip:hover ion-icon, .tooltip:hover i, .tooltip:hover img, 
 .copyButton:hover ion-icon, .contact-links a ion-icon:hover{
-    filter: invert(77%) sepia(9%) saturate(7407%) hue-rotate(183deg) brightness(90%) contrast(76%);
+    filter: brightness(0) saturate(100%) invert(43%) sepia(6%) saturate(4292%) hue-rotate(173deg) brightness(94%) contrast(93%);
 }
 
 .tooltip .tooltiptext{
     visibility: hidden;
     opacity: 100%;
-    background-color: #000;
+    background-color: var(--tooltip-color);
     color: var(--light-color);
     text-align: center;
     padding: 5px 10px;
@@ -138,7 +142,7 @@ body::-webkit-scrollbar-thumb{
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent black transparent;
+    border-color: transparent transparent var(--tooltip-color) transparent;
 }
 
 #contacts{
@@ -167,7 +171,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .contact-information ion-icon{
-    color: inherit;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 60px;
     display: inline-block;
@@ -184,7 +188,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .contact-links ion-icon, .contact-links a{
-    color: inherit;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 40px;
     display: inline-block;
@@ -220,5 +224,5 @@ body::-webkit-scrollbar-thumb{
 }
 
 .contact-links .tooltip:hover{
-    border: 3px solid var(--dark-color);
+    border: 3px solid var(--tooltip-color);
 }
