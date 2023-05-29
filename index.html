@@ -5,9 +5,11 @@
     <title>
         Personal Webpage
     </title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/navbar.css">
     <link rel="stylesheet" href="src/css/animations.css">
+    <link rel="stylesheet" href="src/css/mobile.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,23 +85,55 @@
         <div class="logos">
             <div class="contact-information">
                 <ion-icon name="logo-github"></ion-icon><span class="logo-label animation-hidden-left" id="github-label">github.com/darrenyankj</span>
-                <br><ion-icon name="logo-linkedin"></ion-icon><span class="logo-label animation-hidden-left" id="linkedin-label">linkedin.com/in/darren-yan-kj</span>
-                <br><ion-icon name="mail"></ion-icon><span class="logo-label animation-hidden-left" id="email-label">darrenyankj@gmail.com</span>
-                <br><ion-icon name="paper-plane"></ion-icon><span class="logo-label animation-hidden-left" id="telegram-label">@darrenyankayjay</span>
             </div>
             <div class="contact-links">
+                <div>
                 <div class="tooltip animation-hidden-right" style="--order:2;"><button class="copyButton" onclick="copyFunc('github-label');" onmouseleave="revert('github-label');"><ion-icon name="clipboard-outline"></ion-icon></button><span class="tooltiptext" id="github-label-tooltip">Copy</span></div>
                 <div class="tooltip animation-hidden-right" style="--order:1;"><a href="https://github.com/darrenyankj" target="_blank" rel="noopener noreferrer"><ion-icon name="link-outline"></ion-icon></a><span class="tooltiptext">Link</span></div>
-                <br><div class="tooltip animation-hidden-right" style="--order:2;"><button class="copyButton" onclick="copyFunc('linkedin-label');" onmouseleave="revert('linkedin-label');"><ion-icon name="clipboard-outline"></ion-icon></button><span class="tooltiptext" id="linkedin-label-tooltip">Copy</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="logos">
+            <div class="contact-information">
+                <ion-icon name="logo-linkedin"></ion-icon><span class="logo-label animation-hidden-left" id="linkedin-label">linkedin.com/in/darren-yan-kj</span>
+            </div>
+            <div class="contact-links">
+                <div>
+                <div class="tooltip animation-hidden-right" style="--order:2;"><button class="copyButton" onclick="copyFunc('linkedin-label');" onmouseleave="revert('linkedin-label');"><ion-icon name="clipboard-outline"></ion-icon></button><span class="tooltiptext" id="linkedin-label-tooltip">Copy</span></div>
                 <div class="tooltip animation-hidden-right" style="--order:1;"><a href="https://linkedin.com/in/darren-yan-kj" target="_blank" rel="noopener noreferrer"><ion-icon name="link-outline"></ion-icon></a><span class="tooltiptext">Link</span></div>
-                <br><div class="tooltip animation-hidden-right" style="--order:2;"><button class="copyButton" onclick="copyFunc('email-label');" onmouseleave="revert('email-label');"><ion-icon name="clipboard-outline"></ion-icon></button><span class="tooltiptext" id="email-label-tooltip">Copy</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="logos">
+            <div class="contact-information">
+                <ion-icon name="mail"></ion-icon><span class="logo-label animation-hidden-left" id="email-label">darrenyankj@gmail.com</span>
+            </div>
+            <div class="contact-links">
+                <div>
+                <div class="tooltip animation-hidden-right" style="--order:2;"><button class="copyButton" onclick="copyFunc('email-label');" onmouseleave="revert('email-label');"><ion-icon name="clipboard-outline"></ion-icon></button><span class="tooltiptext" id="email-label-tooltip">Copy</span></div>
                 <div class="tooltip animation-hidden-right" style="--order:1;"><a href="mailto:darrenyankj@gmail.com"><ion-icon name="link-outline"></ion-icon></a><span class="tooltiptext">Link</span></div>
-                <br><div class="tooltip animation-hidden-right" style="--order:2;"><button class="copyButton" onclick="copyFunc('telegram-label');" onmouseleave="revert('telegram-label');"><ion-icon name="clipboard-outline"></ion-icon></button><span class="tooltiptext" id="telegram-label-tooltip">Copy</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="logos">
+            <div class="contact-information">
+                <ion-icon name="paper-plane"></ion-icon><span class="logo-label animation-hidden-left" id="telegram-label">@darrenyankayjay</span>
+            </div>
+            <div class="contact-links">
+                <div>
+                <div class="tooltip animation-hidden-right" style="--order:2;"><button class="copyButton" onclick="copyFunc('telegram-label');" onmouseleave="revert('telegram-label');"><ion-icon name="clipboard-outline"></ion-icon></button><span class="tooltiptext" id="telegram-label-tooltip">Copy</span></div>
                 <div class="tooltip animation-hidden-right" style="--order:1;"><a href="https://t.me/darrenyankayjay" target="_blank" rel="noopener noreferrer"><ion-icon name="link-outline"></ion-icon></a><span class="tooltiptext">Link</span></div>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+
+
+
+
+
 </main>
 <!-- javascript -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

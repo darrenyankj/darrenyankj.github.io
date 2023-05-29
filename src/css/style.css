@@ -5,10 +5,12 @@
     --text-color: #112D4E;
     --blank-text-color: #DBE2EF;
     --tooltip-color: #3F72AF;
+    overflow-x: hidden;
 }
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *{
@@ -20,6 +22,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar{
@@ -41,11 +44,12 @@ body::-webkit-scrollbar-thumb{
     place-items: center;
     align-content: center;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .intro-image img{
-    width: 160px;
-    height: 160px;
+    width: 10rem;
+    height: 10rem;
     border: 3px solid var(--dark-color);
     border-radius: 50%;
 }
@@ -54,12 +58,12 @@ body::-webkit-scrollbar-thumb{
     text-align: center;
 }
 .intro h1{
-    font-size: 50px;
+    font-size: 3.5rem;
     font-weight: 700;
 }
 .intro p{
-    font-size: 20px;
-    padding: 0px 30vh;
+    font-size: 1.3rem;
+    padding: 0px 20vh;
     text-align: justify;
 }
 
@@ -158,17 +162,7 @@ body::-webkit-scrollbar-thumb{
     text-decoration: underline;
 }
 
-.logos{
-    display: flex;
-}
 
-.contact-information{
-    flex: 70%;
-}
-
-.contact-links{
-    flex: 30%;
-}
 
 .contact-information ion-icon{
     color: var(--text-color);
@@ -203,7 +197,6 @@ body::-webkit-scrollbar-thumb{
     display: inline-block;
     position: relative;
     cursor: pointer;
-    float: center;
     transition: transform .2s ease-in-out;
     text-align: center;
 }
@@ -213,7 +206,6 @@ body::-webkit-scrollbar-thumb{
     display: inline-block;
     position: relative;
     cursor: pointer;
-    float: left;
     transition: transform .2s ease-in-out;
     box-sizing: border-box;
 }
@@ -221,6 +213,7 @@ body::-webkit-scrollbar-thumb{
 .contact-links .tooltip{
     border: 3px solid var(--text-color);
     border-radius: 10%;
+    transition: transform .2s ease-in-out;
 }
 
 .contact-links .tooltip:hover{

@@ -1,11 +1,8 @@
 main{
-    margin-left: 5rem;
     background: var(--light-color);
 }
 
 .navbar{
-    width: 5rem;
-    height: 100vh;
     position: fixed;
     background-color: var(--dark-color);
     transition: width .2s ease;
@@ -36,17 +33,6 @@ main{
     transition: .2s ease;
 }
 
-.nav-link:hover{
-    filter: grayscale(0%) opacity(1);
-    background: var(--light-color);
-    color: var(--text-color);
-    font-weight: bold;
-}
-
-.nav-link:hover ion-icon{
-    color: var(--text-color);
-}
-
 .nav-link ion-icon{
     font-size: 30px;
     min-width: 2rem;
@@ -58,14 +44,6 @@ main{
 .link-text{
     display: none;
     margin-left: 1rem;
-}
-
-.navbar:hover{
-    width: 16rem;
-}
-
-.navbar:hover .link-text, .navbar:hover .header-name{
-    display: inline-block;
 }
 
 .nav-header{

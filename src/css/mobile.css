@@ -1,0 +1,96 @@
+@media only screen and (max-width: 900px){
+    /* Nav Bar */
+    .navbar{
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .nav-header{
+        display: none;
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .nav-link{
+        justify-content: center;
+    }
+
+    main{
+        margin-bottom: 5rem;
+    }
+    /* Scroll Bar */
+    body::-webkit-scrollbar{
+        width: 0.3rem;
+    }
+
+    /* Intro */
+    .intro p{
+        padding: 0px 10vh;
+    }
+
+    /* Skills */
+    #skills h1{
+        display: grid;
+        place-items: center;
+    }
+
+    /* Contacts */
+    #contacts{
+        padding-bottom: 10vh;
+    }
+
+    .links, .logos, .contact-links{
+        display: grid;
+        place-items: center;
+        align-content: center;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    /* Nav Bar */
+    main{
+        margin-left: 5rem;
+    }
+
+    .navbar{
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .nav-link:hover{
+        filter: grayscale(0%) opacity(1);
+        background: var(--light-color);
+        color: var(--text-color);
+        font-weight: bold;
+    }
+    
+    .nav-link:hover ion-icon{
+        color: var(--text-color);
+    }
+
+    .navbar:hover{
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text, .navbar:hover .header-name{
+        display: inline-block;
+    }
+
+    /* Contacts */
+    .logos{
+        display: flex;
+    }
+
+    .contact-information{
+        flex: 70%;
+    }
+    
+    .contact-links{
+        flex: 30%;
+    }
+}
+
