@@ -25,3 +25,16 @@ function scrollToSection(event) {
       behavior: 'smooth'
     });
 }
+
+function brightnessToggle(){
+    document.body.classList.toggle("dark-theme");
+
+    const allTooltips = document.querySelectorAll(".tooltip img");
+
+    allTooltips.forEach((iconImage) => iconImage.classList.toggle("img-dark-theme"));
+    
+    var brightMode = document.getElementById("brightness-mode");
+
+    brightMode.innerText = brightMode.innerText == "Light" ? "Dark" : "Light";
+
+}

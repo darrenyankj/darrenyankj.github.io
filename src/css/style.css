@@ -8,6 +8,13 @@
     overflow-x: hidden;
 }
 
+.dark-theme{
+    --dark-color: #F9F7F7;
+    --light-color: #112D4E;
+    --text-color: #F9F7F7;
+    --blank-text-color: #3F72AF;
+}
+
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -101,11 +108,16 @@ body::-webkit-scrollbar-thumb{
     vertical-align: middle;
 }
 
+
+.img-dark-theme{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(207%) hue-rotate(304deg) brightness(112%) contrast(94%) !important;
+}
+
 .tooltip img{
     width: 100%;
     height: auto;
     float: left;
-    filter: invert(14%) sepia(11%) saturate(5104%) hue-rotate(180deg) brightness(97%) contrast(95%);
+    filter: brightness(0) saturate(100%) invert(14%) sepia(11%) saturate(5104%) hue-rotate(180deg) brightness(97%) contrast(95%);
 }
 
 .tooltip:hover{
@@ -115,14 +127,14 @@ body::-webkit-scrollbar-thumb{
 
 .tooltip:hover ion-icon, .tooltip:hover i, .tooltip:hover img, 
 .copyButton:hover ion-icon, .contact-links a ion-icon:hover{
-    filter: brightness(0) saturate(100%) invert(43%) sepia(6%) saturate(4292%) hue-rotate(173deg) brightness(94%) contrast(93%);
+    filter: brightness(0) saturate(100%) invert(43%) sepia(6%) saturate(4292%) hue-rotate(173deg) brightness(94%) contrast(93%) !important;
 }
 
 .tooltip .tooltiptext{
     visibility: hidden;
     opacity: 100%;
     background-color: var(--tooltip-color);
-    color: var(--light-color);
+    color: #F9F7F7;
     text-align: center;
     padding: 5px 10px;
     border-radius: 6px;

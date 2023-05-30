@@ -31,17 +31,24 @@
             </li>
 
             <li class="nav-item">
-                <a href="#skills" class="nav-link" onclick="scrollToSection(event)">
+                <a href="#skills" class="nav-link" onclick="scrollToSection(event);">
                     <ion-icon name="terminal"></ion-icon>
                     <span class="link-text">Skills</span>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="#contacts" class="nav-link" onclick="scrollToSection(event)">
+                <a href="#contacts" class="nav-link" onclick="scrollToSection(event);">
                     <ion-icon name="call"></ion-icon>
                     <span class="link-text">Contacts</span>
                 </a>
+            </li>
+
+            <li class="nav-item">
+                <button class="nav-link brightness-toggle" onclick="brightnessToggle();">
+                    <ion-icon name="sunny"></ion-icon>
+                    <span class="link-text" id="brightness-mode">Light</span>
+                </button>
             </li>
         </ul>
     </nav>

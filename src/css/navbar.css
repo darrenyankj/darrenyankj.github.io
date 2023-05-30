@@ -2,6 +2,15 @@ main{
     background: var(--light-color);
 }
 
+.brightness-toggle{
+    all: unset;
+    background: none;
+    border: none;
+    padding: none;
+    width: 100%;
+    cursor: pointer;
+}
+
 .navbar{
     position: fixed;
     background-color: var(--dark-color);
@@ -48,7 +57,7 @@ main{
 
 .nav-header{
     font-size: 30px;
-    color: var(--blank-text-color);
+    color: var(--light-color);
     font-weight: bold;
     text-align: center;
     width: 100%;
@@ -58,7 +67,7 @@ main{
     height: 5rem;
 }
 
-.nav-header .header-name{
+.header-name{
     display: none;
 }
 
@@ -82,4 +91,9 @@ main{
 
 .active ion-icon{
     color: var(--text-color);
+}
+
+.nav-item:last-child{
+    margin-top: auto;
+    margin-bottom: 5vh;
 }
