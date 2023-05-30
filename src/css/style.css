@@ -45,7 +45,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 0.75rem;
 }
 
-#background{
+#introduction{
     background-color: var(--light-color);
     display: grid;
     place-items: center;
@@ -72,6 +72,28 @@ body::-webkit-scrollbar-thumb{
     font-size: 1.3rem;
     padding: 0px 20vh;
     text-align: justify;
+}
+
+.resume-download{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--text-color);
+    color: var(--light-color);
+    font-size: 1.5rem;
+    border-radius: 6px;
+    padding: 0.2rem;
+    margin: 10px;
+    display: inline-block;
+}
+
+.resume-download ion-icon{
+    margin-right: 1rem;
+}
+
+.resume-download:hover{
+    transform: translateY(-5px);
+    filter: brightness(90%);
+    transition: transform .2s ease-in-out;
 }
 
 #skills{
@@ -173,8 +195,6 @@ body::-webkit-scrollbar-thumb{
     font-size: 60px;
     text-decoration: underline;
 }
-
-
 
 .contact-information ion-icon{
     color: var(--text-color);
