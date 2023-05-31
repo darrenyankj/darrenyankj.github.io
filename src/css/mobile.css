@@ -1,4 +1,8 @@
 @media only screen and (max-width: 900px){
+    :root{
+        font-size: 12px;
+    }
+
     /* Nav Bar */
     .navbar{
         bottom: 0;
@@ -64,7 +68,7 @@
     .nav-link:hover{
         filter: grayscale(0%) opacity(1);
         background: var(--light-color);
-        color: var(--text-color);
+        color: var(--text-color) !important;
         font-weight: bold;
     }
     
@@ -81,6 +85,10 @@
     }
 
     /* Contacts */
+    #contacts{
+        padding-left: 40px;
+    }
+
     .logos{
         display: flex;
     }

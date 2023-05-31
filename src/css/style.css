@@ -6,6 +6,7 @@
     --blank-text-color: #DBE2EF;
     --tooltip-color: #3F72AF;
     overflow-x: hidden;
+    font-size: 16px;
 }
 
 .dark-theme{
@@ -105,25 +106,30 @@ body::-webkit-scrollbar-thumb{
 }
 
 #skills ion-icon, #skills i{
-    font-size: 60px;
+    font-size: 3.75rem;
     color: var(--text-color);
 }
 
 #skills h1{
-    font-size: 60px;
+    font-size: 3.75rem;
     padding: 20px 0;
     text-decoration: underline;
 }
 
 .skill-languages h2, .skill-others h2{
     text-decoration: none;
-    font-size: 40px;
+    font-size: 2.5rem;
     padding: 20px 0;
 }
 
+#skills p{
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+}
+
 .tooltip{
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     display: inline-block;
     margin: 20px 10px;
     position: relative;
@@ -186,20 +192,19 @@ body::-webkit-scrollbar-thumb{
 #contacts{
     background-color: var(--light-color);
     text-align: left;
-    padding-left: 40px;
     min-height: 100vh;
     padding-top: 20px;
 }
 
 .links h1{
-    font-size: 60px;
+    font-size: 3.75rem;
     text-decoration: underline;
 }
 
 .contact-information ion-icon{
     color: var(--text-color);
     text-decoration: none;
-    font-size: 60px;
+    font-size: 3.75rem;
     display: inline-block;
     align-items: center;
     vertical-align: middle;
@@ -207,7 +212,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .logo-label{
-    font-size: 30px;
+    font-size: 2rem;
     display: inline-block;
     vertical-align: middle;
     margin-left: 5px;
@@ -216,7 +221,7 @@ body::-webkit-scrollbar-thumb{
 .contact-links ion-icon, .contact-links a{
     color: var(--text-color);
     text-decoration: none;
-    font-size: 40px;
+    font-size: 2.5rem;
     display: inline-block;
     align-items: center;
     vertical-align: middle;
@@ -224,7 +229,7 @@ body::-webkit-scrollbar-thumb{
 
 .copyButton{
     background: none;
-    padding: 10px;
+    padding: 0.625rem;
     border: none;
     display: inline-block;
     position: relative;
@@ -234,7 +239,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .contact-links a ion-icon{
-    padding: 10px;
+    padding: 0.625rem;
     display: inline-block;
     position: relative;
     cursor: pointer;

@@ -37,4 +37,5 @@ function brightnessToggle(){
 
     brightMode.innerText = brightMode.innerText == "Light" ? "Dark" : "Light";
 
+    document.getElementById("brightness").classList.toggle("brightness-toggle-gray");
 }

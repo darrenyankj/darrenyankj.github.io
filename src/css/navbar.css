@@ -6,9 +6,13 @@ main{
     all: unset;
     background: none;
     border: none;
-    padding: none;
     width: 100%;
     cursor: pointer;
+}
+
+.brightness-toggle-gray{
+    filter: grayscale(0%) opacity(1) !important;
+    color: white !important;
 }
 
 .navbar{
@@ -43,7 +47,7 @@ main{
 }
 
 .nav-link ion-icon{
-    font-size: 30px;
+    font-size: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;
     color: var(--blank-text-color);
