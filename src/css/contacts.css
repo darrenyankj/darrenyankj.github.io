@@ -1,0 +1,67 @@
+#contacts{
+    background-color: var(--light-color);
+    text-align: left;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.links h1{
+    font-size: 3.75rem;
+    text-decoration: underline;
+}
+
+.contact-information ion-icon{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 3.75rem;
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+    margin: 20px 10px;
+}
+
+.logo-label{
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.contact-links ion-icon, .contact-links a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 2.5rem;
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.copyButton{
+    background: none;
+    padding: 0.625rem;
+    border: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+    text-align: center;
+}
+
+.contact-links a ion-icon{
+    padding: 0.625rem;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.contact-links .tooltip{
+    border: 3px solid var(--text-color);
+    border-radius: 10%;
+    transition: transform .2s ease-in-out;
+}
+
+.contact-links .tooltip:hover{
+    border: 3px solid var(--tooltip-color);
+}

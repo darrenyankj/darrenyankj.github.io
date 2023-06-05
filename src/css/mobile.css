@@ -35,6 +35,35 @@
         padding: 0px 10vh;
     }
 
+    /* Experiences */
+    #experiences h1{
+        display: grid;
+        place-items: center;
+    }
+
+    .timeline-container{
+        width: 80%;
+    }
+
+    .right-timeline{
+        left: 0;
+    }
+
+    .timeline::after{
+        left: 0;
+    }
+
+    .left-timeline-arrow{
+        border-left: 0;
+        right: 0;
+        border-right: 15px solid var(--blank-text-color);
+        left: -14px;
+    }
+
+    .left-timeline .timeline-text::before{
+        left: -58px;
+    }
+
     /* Skills */
     #skills h1{
         display: grid;
@@ -50,6 +79,10 @@
         display: grid;
         place-items: center;
         align-content: center;
+    }
+
+    .contact-information ion-icon{
+        width: 100%;
     }
 }
 
@@ -82,6 +115,14 @@
 
     .navbar:hover .link-text, .navbar:hover .header-name{
         display: inline-block;
+    }
+
+    /* Intro */
+
+    .resume-download:hover{
+        transform: translateY(-5px);
+        filter: brightness(90%);
+        transition: transform .2s ease-in-out;
     }
 
     /* Contacts */

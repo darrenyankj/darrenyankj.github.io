@@ -1,0 +1,50 @@
+#introduction{
+    background-color: var(--light-color);
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.intro-image img{
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid var(--dark-color);
+    border-radius: 50%;
+}
+.intro{
+    color: var(--text-color);
+    text-align: center;
+}
+.intro h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.intro p{
+    font-size: 1.3rem;
+    padding: 0px 20vh;
+    text-align: justify;
+}
+
+.resume-download{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--text-color);
+    color: var(--light-color);
+    font-size: 1.5rem;
+    border-radius: 6px;
+    padding: 0.2rem;
+    margin: 10px;
+    display: inline-block;
+}
+
+.resume-download ion-icon{
+    margin-right: 1rem;
+}
+
+.resume-download:hover{
+    transform: translateY(-5px);
+    filter: brightness(90%);
+    transition: transform .2s ease-in-out;
+}

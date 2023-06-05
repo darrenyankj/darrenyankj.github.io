@@ -6,10 +6,7 @@
         Personal Webpage
     </title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/navbar.css">
-    <link rel="stylesheet" href="src/css/animations.css">
-    <link rel="stylesheet" href="src/css/mobile.css">
+    <link rel="stylesheet" href="src/css/master.css" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +31,13 @@
                 <a href="#skills" class="nav-link" onclick="scrollToSection(event);">
                     <ion-icon name="terminal"></ion-icon>
                     <span class="link-text">Skills</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#experiences" class="nav-link" onclick="scrollToSection(event);">
+                    <ion-icon name="briefcase"></ion-icon>
+                    <span class="link-text">Experiences</span>
                 </a>
             </li>
 
@@ -87,6 +91,43 @@
         <div class="tooltip animation-hidden-left" style="--order:4;"><img src="images/icon-excel.png"><span class="tooltiptext">Excel</span></div>
         <br>
         <div class="animation-hidden-left"><p>Others: Tableau, Power BI, Google Suite, Excel</p></div>
+    </div>
+</section>
+
+<section id="experiences">
+    <h1 class="animation-hidden-left">Experiences</h1>
+    <div class="timeline" id="timeline-line">
+        <div class="dot"></div>
+        <div class="timeline-container left-timeline animation-hidden-left">
+            <div class="timeline-text">
+                <h2>Ensign Infosecurity, Data Science Intern</h2>
+                <small>2022</small>
+                <p>Assisted Data Science department in creation of cybercrime data analysis detection models using NetFlow and email datasets, using Convolutional and Siamese Neural Networks.</p>
+                <br>
+                <p>Worked particularly in: Python (Numpy, Scikit-Learn, Tensorflow, PySpark)</p>
+                <span class="left-timeline-arrow"></span>
+            </div> 
+        </div>
+
+        <div class="timeline-container right-timeline animation-hidden-right">
+            <div class="timeline-text">
+                <h2>Residential College 4, Director of Clubs and Societies</h2>
+                <small>2022 - 2023</small>
+                <p>Oversaw the management of over 30 interest groups in the Residential College, Project Director for Inter-College Games 2023 and Inter-House Games 2022.</p>
+                <span class="right-timeline-arrow"></span>
+            </div> 
+        </div>
+
+        <div class="timeline-container left-timeline animation-hidden-left">
+            <div class="timeline-text">
+                <h2>PricewaterhouseCoopers, Temporary Staff</h2>
+                <small>2021</small>
+                <p>Assisted in administrative duties for Accounting Consulting Service department and liased with stakeholders to manage the creation of a new consultancy request portal.</p>
+                <br>
+                <p>Worked particularly in: Google Suite</p>
+                <span class="left-timeline-arrow"></span>
+            </div> 
+        </div>
     </div>
 </section>
 

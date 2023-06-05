@@ -1,3 +1,14 @@
+// Changing timeline animation based on media query
+const mediaQuery = window.matchMedia("(max-width: 900px)");
+if (mediaQuery.matches){
+    const timelineLeft = document.querySelectorAll(".left-timeline");
+    timelineLeft.forEach((el) => {
+        el.classList.remove("animation-hidden-left");
+        el.classList.add("animation-hidden-right");
+    });
+}
+
+
 // Adding class in js so that elements are not hidden for js disabled platforms
 const hiddenElementsAll = ["left", "right", "appear"];
 for (const element of hiddenElementsAll) {
@@ -23,6 +34,7 @@ for (const element of hiddenElementsAll) {
     hiddenElements.forEach((el) => observer.observe(el));
 }
 
+// Checking for active tab in Nav Bar
 const activeLink = document.querySelectorAll(".nav-link");
 const section = document.querySelectorAll("section");
 

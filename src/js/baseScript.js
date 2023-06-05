@@ -17,7 +17,7 @@ function revert(id){
 function scrollToSection(event) {
     event.preventDefault();
   
-    const section = document.querySelector(event.target.getAttribute('href'));
+    const section = document.querySelector(event.currentTarget.getAttribute('href'));
     const sectionTop = section.offsetTop - parseInt(getComputedStyle(section).paddingTop);
   
     window.scrollTo({
