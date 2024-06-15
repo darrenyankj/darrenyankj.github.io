@@ -2,6 +2,7 @@
     background-color: var(--light-color);
     min-height: 100vh;
     padding-left: 40px;
+    
 }
 
 #experiences h1{
@@ -11,89 +12,117 @@
 }
 
 .timeline{
-    position: relative;
-    max-width: 1200px;
-    margin: 50px auto;
-    z-index: 1;
+    background: var(--light-color);
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
 .timeline-container{
-    padding: 10px 50px;
     position: relative;
-    width: 40%;
+    max-width: 400px;
+}
+
+.timeline-container:nth-child(odd){
+    padding: 30px 0 30px 30px;
+}
+
+.timeline-container:nth-child(even){
+    padding: 30px 30px 30px 0;
+}
+
+.timeline-container::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid var(--dark-color);
+}
+
+.timeline-container:nth-child(odd)::before{
+    left: 0px;
+    top: -5px;
+    bottom: -4.5px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 50px 0 0 50px;
+}
+
+@media only screen and (max-width: 400px) {
+    .timeline-container:nth-child(odd)::before {
+      top: -5px;
+      bottom: -5px;
+    }
+}
+
+.timeline-container:nth-child(even)::before{
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+}
+
+.timeline-container:first-child::before{
+    border-top: 0;
+    border-top-left-radius: 0;
+}
+
+.timeline-container:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+}
+  
+.timeline-container:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
 }
 
 .timeline-text{
-    padding: 20px 30px;
-    position: relative;
-    border-radius: 6px;
-    background: var(--blank-text-color);
-}
-
-.left-timeline{
-    left: 0;
-}
-
-.right-timeline{
-    left: 50%;
-}
-
-.timeline::after{
-    content: "";
-    position: absolute;
-    width: 6px;
-    height: 100%;
-    background: var(--text-color);
-    top: 0;
-    left: 50%;
-    margin-left: -3px;
-    z-index: 1;
-    animation: linegrowth 0.5s linear forwards;
-}
-
-@keyframes linegrowth{
-    0%{
-        height: 0%;
-    }
-    100%{
-        height: 100%;
-    }
+    display: flex;
+    flex-direction: column;
+    background: var(--tooltip-color);
+    color: var(--dark-color);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .timeline-text h2{
-    font-size: 1.2rem;
+    color: var(--dark-color);
+    position: relative;
 }
 
-.timeline-text small{
-    display: inline-block;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-.timeline-text p{
-    font-size: 1rem;
-}
-
-.left-timeline-arrow{
-    height: 0;
-    width: 0;
+.timeline-text h2::before {
+    content: "";
     position: absolute;
-    top: 38%;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid var(--blank-text-color);
-    right: -14px;
+    width: 10px;
+    height: 10px;
+    background: var(--light-color);
+    border-radius: 999px;
+    border: 3px solid var(--dark-color);
 }
 
-.right-timeline-arrow{
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 38%;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid var(--blank-text-color);
-    left: -14px;
+.timeline-container:nth-child(even) > .timeline-text > h2 {
+    text-align: right;
 }
+  
+.timeline-container:nth-child(odd) > .timeline-text > h2::before {
+    left: -45px;
+}
+  
+.timeline-container:nth-child(even) > .timeline-text > h2::before {
+    right: -45px;
+}
+
+.timeline-container:nth-child(even) > .timeline-text > small {
+    text-align: right;
+}
+  
+.timeline-container:nth-child(odd) > .timeline-text > small::before {
+    left: -45px;
+}
+
+.timeline-container:nth-child(even) > .timeline-text > small::before {
+    right: -45px;
+}
+  
