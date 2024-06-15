@@ -2,20 +2,20 @@
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all .8s;
+    transition: all .4s;
 }
 
 .animation-hidden-right-js{
     opacity: 0;
     filter: blur(5px);
     transform: translateX(100%);
-    transition: all .8s;    
+    transition: all .54;    
 }
 
 .animation-hidden-appear-js{
     opacity: 0;
     transition-delay: calc(1s * var(--order));
-    transition: all .8s;
+    transition: all .5s;
 }
 
 .animation-show{

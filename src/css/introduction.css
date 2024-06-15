@@ -34,13 +34,9 @@
     color: var(--light-color);
     font-size: 1.5rem;
     border-radius: 6px;
-    padding: 0.2rem;
+    padding: 0.5rem;
     margin: 10px;
     display: inline-block;
-}
-
-.resume-download ion-icon{
-    margin-right: 1rem;
 }
 
 .resume-download:hover{

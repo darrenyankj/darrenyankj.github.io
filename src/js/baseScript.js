@@ -39,3 +39,7 @@ function brightnessToggle(){
 
     document.getElementById("brightness").classList.toggle("brightness-toggle-gray");
 }
+
+window.onload = function(){
+    brightnessToggle();
+}

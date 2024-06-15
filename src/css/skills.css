@@ -50,7 +50,7 @@
 
 .tooltip:hover{
     transform: translateY(-5px);
-    transition: transform .2s ease-in-out;
+    transition: transform .1s ease-in-out;
 }
 
 .tooltip:hover ion-icon, .tooltip:hover i, .tooltip:hover img, 
