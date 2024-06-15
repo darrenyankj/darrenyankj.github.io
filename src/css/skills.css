@@ -62,7 +62,7 @@
     visibility: hidden;
     opacity: 100%;
     background-color: var(--tooltip-color);
-    color: #F9F7F7;
+    color: var(--tooltip-text-color);
     text-align: center;
     padding: 5px 10px;
     border-radius: 6px;

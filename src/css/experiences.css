@@ -2,7 +2,6 @@
     background-color: var(--light-color);
     min-height: 100vh;
     padding-left: 40px;
-    
 }
 
 #experiences h1{
@@ -82,17 +81,17 @@
     display: flex;
     flex-direction: column;
     background: var(--tooltip-color);
-    color: var(--dark-color);
+    color: var(--tooltip-text-color);
     border-radius: 10px;
     padding: 10px;
 }
 
-.timeline-text h2{
-    color: var(--dark-color);
+.timeline-text h2, a{
+    color: var(--tooltip-text-color);
     position: relative;
 }
 
-.timeline-text h2::before {
+.timeline-text h2::before{
     content: "";
     position: absolute;
     width: 10px;
@@ -102,11 +101,11 @@
     border: 3px solid var(--dark-color);
 }
 
-.timeline-container:nth-child(even) > .timeline-text > h2 {
+.timeline-container:nth-child(even) > .timeline-text > h2{
     text-align: right;
 }
   
-.timeline-container:nth-child(odd) > .timeline-text > h2::before {
+.timeline-container:nth-child(odd) > .timeline-text > h2::before{
     left: -45px;
 }
   
@@ -114,15 +113,16 @@
     right: -45px;
 }
 
-.timeline-container:nth-child(even) > .timeline-text > small {
+.timeline-container:nth-child(even) > .timeline-text > small, h3 {
     text-align: right;
+    z-index: 1;
 }
   
-.timeline-container:nth-child(odd) > .timeline-text > small::before {
+.timeline-container:nth-child(odd) > .timeline-text > small::before, h3::before {
     left: -45px;
 }
 
-.timeline-container:nth-child(even) > .timeline-text > small::before {
+.timeline-container:nth-child(even) > .timeline-text > small::before, h3::before {
     right: -45px;
 }
   
