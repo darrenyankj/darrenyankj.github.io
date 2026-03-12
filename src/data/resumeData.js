@@ -40,17 +40,6 @@ export const timelineEntries = [
     tech: ['Python', 'SAS', 'SQL', 'Qlik'],
   },
   {
-    id: 5,
-    title: 'GDP Growth Predictor',
-    org: 'Personal Project',
-    date: '2024',
-    type: 'project',
-    link: 'https://darrenyankj.shinyapps.io/gdp_predictor/',
-    description:
-      'Full-stack web application to predict GDP growth rate using time series analysis and interactive visualisations.',
-    tech: ['R', 'Shiny'],
-  },
-  {
     id: 6,
     title: 'Dodgeball Captain & RC4 Director',
     org: 'National University of Singapore',
