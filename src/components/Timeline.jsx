@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { timelineEntries, typeColors } from '../data/resumeData';
+import { TECH_ICON_MAP } from '../data/techIconMap';
 import { TerminalHeader } from './TerminalHeader';
 import styles from '../styles/Timeline.module.css';
 
@@ -51,11 +52,15 @@ function TimelineCard({ entry, index }) {
 
         {entry.tech.length > 0 && (
           <div className={styles.techChips}>
-            {entry.tech.map(t => (
-              <span key={t} className={styles.chip}>
-                [{t}]
-              </span>
-            ))}
+            {entry.tech.map(t => {
+              const Icon = TECH_ICON_MAP[t];
+              return (
+                <span key={t} className={styles.chip}>
+                  {Icon && <Icon className={styles.chipIcon} />}
+                  {t}
+                </span>
+              );
+            })}
           </div>
         )}
       </motion.div>
