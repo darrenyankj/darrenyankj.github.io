@@ -1,0 +1,13 @@
+.trackerContainer {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.ball {
+  position: fixed;
+  filter: drop-shadow(0 4px 16px rgba(192, 57, 43, 0.7));
+  will-change: transform;
+}

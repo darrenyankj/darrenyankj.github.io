@@ -1,0 +1,114 @@
+/* ─── CSS Variables ─────────────────────────────────────────── */
+:root {
+  /* Light theme (default) */
+  --dark-color: #112D4E;
+  --light-color: #F9F7F7;
+  --accent-color: #3F72AF;
+  --accent-red: #c0392b;
+
+  --bg-color: #F9F7F7;
+  --text-color: #112D4E;
+  --text-muted: #3d5573;
+  --accent-text: #2558a0;
+  --chip-text: #1e4a82;
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --section-bg: #F9F7F7;
+  --section-bg-alt: #eef2f8;
+  --navbar-bg: rgba(249, 247, 247, 0.92);
+  --border-color: rgba(17, 45, 78, 0.15);
+  --nav-hover-bg: rgba(63, 114, 175, 0.1);
+  --chip-bg: rgba(63, 114, 175, 0.08);
+  --tooltip-bg: #3F72AF;
+}
+
+.dark-theme {
+  --bg-color: #0d1b2a;
+  --text-color: #ecf3fc;
+  --text-muted: #adc4de;
+  --accent-text: #7ab8f0;
+  --chip-text: #a8d0f5;
+  --card-bg: rgba(17, 30, 50, 0.9);
+  --section-bg: #0d1b2a;
+  --section-bg-alt: #111e30;
+  --navbar-bg: rgba(10, 18, 30, 0.95);
+  --border-color: rgba(63, 114, 175, 0.2);
+  --nav-hover-bg: rgba(63, 114, 175, 0.15);
+  --chip-bg: rgba(63, 114, 175, 0.12);
+}
+
+/* ─── Reset & Base ──────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+  /* Code-editor grid texture */
+  background-image:
+    linear-gradient(rgba(63, 114, 175, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(63, 114, 175, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--section-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 3px;
+}
+
+/* ─── Layout ────────────────────────────────────────────────── */
+#root {
+  display: flex;
+}
+
+main {
+  flex: 1;
+}
+
+@media (min-width: 900px) {
+  main {
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 899px) {
+  main {
+    margin-bottom: 5rem;
+  }
+}
+
+/* ─── Reduced motion ────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
