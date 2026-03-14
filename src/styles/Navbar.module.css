@@ -103,6 +103,16 @@
   .navbar:hover .headerName {
     opacity: 1;
   }
+
+  .navHeader {
+    justify-content: center;
+    padding: 1.5rem 0;
+  }
+
+  .navbar:hover .navHeader {
+    justify-content: flex-start;
+    padding: 1.5rem 1.2rem;
+  }
 }
 
 /* Mobile: bottom bar */
