@@ -41,8 +41,9 @@
 }
 
 .label {
-  font-family: 'Fira Code', monospace;
-  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
   color: var(--text-color);
   white-space: nowrap;
   overflow: hidden;
